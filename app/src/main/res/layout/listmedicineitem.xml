@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageContactMed"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:layout_margin="8dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textNameMed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageContact"
+                    android:text="Medication Name"
+                    android:padding="2dp"
+                    android:textSize="18sp"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:layout_marginTop="9dp"/>
+
+                <TextView
+                    android:id="@+id/textDescriptionMed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@+id/textName"
+                    android:text="Medication Description"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_toRightOf="@+id/textNumber"
+                    android:text="Dose"
+                    android:textColor="#1A237E"
+                    android:textStyle="italic"
+                    android:id="@+id/textDoseMed"
+                    android:textSize="14sp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/editBtnItemMed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_edit"
+                            app:tint="@color/purple_500"
+                            android:layout_gravity="end"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:id="@+id/deleteBtnItemMed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:tint="@color/red"
+                            android:src="@drawable/ic_baseline_delete"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

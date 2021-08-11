@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditorActivity">
+
+
+    <LinearLayout
+        android:id="@+id/firstEditorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/backhomebtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_arrow_back"
+                android:layout_margin="3dp"
+                app:tint="@color/black" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/kitTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Doctor"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/doctorImg"
+            android:layout_width="220dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo"
+            />
+
+
+        <TextView
+            android:id="@+id/textHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"
+            android:text="Tap to Add an Image"
+            android:textStyle="bold"
+            android:layout_below="@+id/profile_image" />
+
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textHint"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:hint="Name Here:"
+            android:textColorHint="@color/black"/>
+
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/nameEditText"
+            android:inputType="number"
+            android:hint="Phone Number Here:"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/phoneEditText"
+            android:hint="Email Here:"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/doctorTypeText"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/emailEditText"
+            android:hint="Select Type as stated below:"
+            android:textColorHint="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            android:text="Choose one: Personal, Work, Home"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kitrecyclerlayout"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/addingDocBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:textSize="20sp"
+                android:layout_below="@+id/kitrecyclerlayout"
+                android:background="@color/purple_500"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstEditorLayout">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

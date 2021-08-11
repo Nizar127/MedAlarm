@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedicineActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/backhomebtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_arrow_back"
+                android:layout_margin="20dp"
+                app:tint="@color/black" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/dataMedicineTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Medicine"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dataMedicineTextView"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medication:"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/medicineName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/name"
+                    android:hint="Enter the medicine name"
+                    android:inputType="text"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:maxLength="20"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/descMedicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/description"
+                    android:hint="Optional field. Before, after meal or other information."
+                    android:inputType="textMultiLine"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dose"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/doseMed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:hint="Eg: 1 pill"
+                    android:inputType="text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/btnAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click To Set Time"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/timeMed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Your time once you click"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/reminderBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="99dp"
+                android:text="SET REMINDER"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

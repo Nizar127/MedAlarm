@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Profile"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="100dp">
+
+
+            <TextView
+                android:id="@+id/emailAddressTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Address:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/thisemailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/ageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="28dp"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/thisage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="28dp"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/fullNametitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Full Name:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                 />
+
+            <TextView
+                android:id="@+id/thisfullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="28dp"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:id="@+id/SetAlarm"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_500"
+                android:text="Set Reminder"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                 />
+
+            <Button
+                android:id="@+id/signOut"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#8DF1EE"
+                android:text="sign out"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconTint="#423A30"
+            android:background="#FFFAE7"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottomnavigation">
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "674039754550",
+    "project_id": "medicine-d2ec2",
+    "storage_bucket": "medicine-d2ec2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674039754550:android:063eebcfed780eb6654d97",
+        "android_client_info": {
+          "package_name": "com.example.alarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674039754550-e98bcb3aqp4pq7clgvon6jjcs6lf5orv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsNY6CAjgfl8OUdNuWgY3Dc2D3xoq95zQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674039754550-e98bcb3aqp4pq7clgvon6jjcs6lf5orv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674039754550:android:505582b6a3d13fa5654d97",
+        "android_client_info": {
+          "package_name": "com.liyana.medalarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674039754550-e98bcb3aqp4pq7clgvon6jjcs6lf5orv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsNY6CAjgfl8OUdNuWgY3Dc2D3xoq95zQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674039754550-e98bcb3aqp4pq7clgvon6jjcs6lf5orv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
